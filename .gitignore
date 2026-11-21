@@ -1,0 +1,29 @@
+# Raw captures (private notes)
+raw/
+
+# Organized wiki (generated)
+wiki/
+
+# Embeddings (binary, large)
+embeddings/
+
+# Environment
+.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# Streamlit
+.streamlit/secrets.toml
+
+# OS
+Thumbs.db
+Desktop.ini
+
+# IDE
+.vscode/
+.idea/
