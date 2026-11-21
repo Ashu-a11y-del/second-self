@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SecondSelf - The Living Brain</title>
+  <script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: system-ui, -apple-system, sans-serif; background: #0a0a0a; color: #e0e0e0; overflow: hidden; }
+    #header { padding: 12px 20px; background: #111; border-bottom: 1px solid #333; display: flex; justify-content: space-between; align-items: center; }
+    #header h1 { font-size: 18px; font-weight: 600; color: #fff; }
+    #stats { font-size: 12px; color: #888; }
+    #legend { position: fixed; bottom: 16px; left: 16px; background: rgba(17,17,17,0.9); padding: 10px 14px; border-radius: 8px; border: 1px solid #333; font-size: 12px; }
+    #legend .row { display: flex; align-items: center; gap: 6px; margin: 3px 0; }
+    #legend .dot { width: 12px; height: 12px; border-radius: 50%; display: inline-block; }
+    #network { width: 100%; height: calc(100vh - 52px); }
+    .vis-tooltip { background: #1a1a1a !important; color: #e0e0e0 !important; border: 1px solid #444 !important; font-size: 12px !important; padding: 8px 10px !important; border-radius: 6px !important; max-width: 320px !important; white-space: pre-wrap !important; }
+  </style>
+</head>
+<body>
+  <div id="header">
+    <h1>SecondSelf - The Living Brain</h1>
+    <p id="stats">Loading...</p>
+  </div>
+  <div id="legend"></div>
+  <div id="network"></div>
+
+  <script>
+    const CATEGORY_COLORS = {
+      Projects: '#e74c3c',
+      Areas: '#3498db',
+      Resources: '#2ecc71',
+      Archives: '#95a5a6'
+    };
+
+    function renderLegend(categories) {
+      const legend = document.getElementById('legend');
+      legend.innerHTML = categories.map(cat =>
+        `<div class="row"><span class="dot" style="background:${CATEGORY_COLORS[cat] || '#888'}"></span>${cat}</div>`
+      ).join('');
+    }
+
+    fetch('graph.json')
+      .then(r => {
+        if (!r.ok) throw new Error('graph.json not found - run build_graph.py first');
+        return r.json();
+      })
+      .then(graph => {
+        document.getElementById('stats').textContent =
+          `${graph.meta.total_nodes} notes · ${graph.meta.total_edges} connections · Categories: ${graph.meta.categories.join(', ')}`;
+
+        renderLegend(graph.meta.categories || []);
+
+        const nodes = new vis.DataSet(graph.nodes.map(n => ({
+          id: n.id,
+          label: n.label && n.label.length > 24 ? n.label.substring(0, 24) + '...' : (n.label || n.id.slice(0, 8)),
+          title: `${n.summary || n.label || ''}\n\nTags: ${(n.tags || []).join(', ') || 'none'}\nConnections: ${n.degree || 0}`,
+          color: { background: CATEGORY_COLORS[n.category] || '#888', border: '#ffffff' },
+          size: 15 + (n.degree || 0) * 4,
+          font: { color: '#e0e0e0', size: 11 },
+          borderWidth: 2,
+          shadow: { enabled: true, color: 'rgba(0,0,0,0.5)' }
+        })));
+
+        const edges = new vis.DataSet(graph.edges.map(e => ({
+          from: e.from,
+          to: e.to,
+          width: Math.max(1, (e.weight || 0.5) * 4),
+          color: { color: '#666', opacity: 0.6 },
+          arrows: { to: { enabled: false } },
+          title: `Similarity: ${e.weight != null ? e.weight : 'N/A'}`
+        })));
+
+        const container = document.getElementById('network');
+        const data = { nodes, edges };
+        const options = {
+          physics: {
+            forceAtlas2Based: {
+              gravitationalConstant: -60,
+              centralGravity: 0.01,
+              springLength: 150,
+              springConstant: 0.08,
+              damping: 0.4
+            },
+            stabilization: { iterations: 200 }
+          },
+          interaction: {
+            hover: true,
+            dragNodes: true,
+            zoomView: true,
+            dragView: true,
+            tooltipDelay: 200,
+            navigationButtons: true
+          },
+          nodes: { shape: 'dot' },
+          edges: { smooth: { type: 'continuous' } }
+        };
+
+        const network = new vis.Network(container, data, options);
+
+        // Pulse effect on hover
+        network.on('hoverNode', params => {
+          nodes.update({ id: params.node, size: 40 });
+        });
+        network.on('blurNode', params => {
+          const node = nodes.get(params.node);
+          nodes.update({ id: params.node, size: 15 + ((node && node.degree) || 0) * 4 });
+        });
+      })
+      .catch(err => {
+        document.getElementById('stats').textContent = 'Error: ' + err.message;
+        console.error(err);
+      });
+  </script>
+</body>
+</html>

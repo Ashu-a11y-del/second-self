@@ -1,14 +1,18 @@
-# Raw captures (private notes)
+# Raw captures (private intake - not deployed)
 raw/
 
-# Organized wiki (generated)
-wiki/
+# Organized wiki - committed for the public demo (uncomment to keep private)
+# wiki/
 
-# Embeddings (binary, large)
-embeddings/
+# Embeddings - committed for the public demo (uncomment to keep private)
+# embeddings/
 
-# Environment
+# Environment / secrets
 .env
+.env.example
+
+# Packed embeddings artifact (redundant with embeddings/)
+data/
 
 # Python
 __pycache__/

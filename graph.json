@@ -1,0 +1,328 @@
+{
+  "nodes": [
+    {
+      "id": "87948fb6-9483-4045-b8ea-d2d6be1c75ca",
+      "label": "Started 16:8 intermittent fasting, energy improved",
+      "category": "Areas",
+      "tags": [
+        "health",
+        "intermittent-fasting",
+        "energy-levels"
+      ],
+      "summary": "Started 16:8 intermittent fasting, energy improved",
+      "degree": 1,
+      "group": "Areas",
+      "content_preview": "# Started 16:8 intermittent fasting, energy improved\n\nHealth: started intermittent fasting (16:8) - energy levels are noticeably better"
+    },
+    {
+      "id": "186f235e-42f3-4db2-bb07-bd2f0b7cfb27",
+      "label": "Started 3x weekly 5km morning runs",
+      "category": "Areas",
+      "tags": [
+        "health",
+        "morning-runs",
+        "exercise"
+      ],
+      "summary": "Started 3x weekly 5km morning runs",
+      "degree": 1,
+      "group": "Areas",
+      "content_preview": "# Started 3x weekly 5km morning runs\n\nHealth: started morning runs 3x a week, 5km each"
+    },
+    {
+      "id": "ef5a0845-5842-48fe-9433-1c084bb0eb98",
+      "label": "AI-powered personal knowledge base project",
+      "category": "Projects",
+      "tags": [
+        "ai-powered",
+        "personal-knowledge-base",
+        "secondself"
+      ],
+      "summary": "AI-powered personal knowledge base project",
+      "degree": 3,
+      "group": "Projects",
+      "content_preview": "# AI-powered personal knowledge base project\n\nSecondSelf project idea: AI-powered personal knowledge base"
+    },
+    {
+      "id": "b3fa1f12-a69b-4a5b-884b-8e9263d6104c",
+      "label": "Q1 roadmap meeting: focus on onboarding flow",
+      "category": "Projects",
+      "tags": [
+        "q1-roadmap",
+        "onboarding-flow",
+        "team-meeting"
+      ],
+      "summary": "Q1 roadmap meeting: focus on onboarding flow",
+      "degree": 0,
+      "group": "Projects",
+      "content_preview": "# Q1 roadmap meeting: focus on onboarding flow\n\nMeeting notes: Discussed Q1 roadmap with team - decided to focus on onboarding flow"
+    },
+    {
+      "id": "c15bdc48-d805-43c7-87ad-34e262eba259",
+      "label": "Build a URL shortener with Flask and Redis",
+      "category": "Projects",
+      "tags": [
+        "url-shortener",
+        "flask-redis",
+        "weekend-project"
+      ],
+      "summary": "Build a URL shortener with Flask and Redis",
+      "degree": 0,
+      "group": "Projects",
+      "content_preview": "# Build a URL shortener with Flask and Redis\n\nIdea for weekend project: build a URL shortener using Flask and Redis"
+    },
+    {
+      "id": "81895030-2d00-44c8-a4db-efd93281427f",
+      "label": "Build an AI-powered personal knowledge base that auto-captures, classifies, link",
+      "category": "Projects",
+      "tags": [
+        "personal-ai-second-brain",
+        "knowledge-management",
+        "ai-organization"
+      ],
+      "summary": "Build an AI-powered personal knowledge base that auto-captures, classifies, link",
+      "degree": 2,
+      "group": "Projects",
+      "content_preview": "# Build an AI-powered personal knowledge base that auto-captures, classifies, link\n\nProject: SecondSelf \u2014 Your Personal AI Second Brain \nProblemStatement.md \nEvery notes app fails the same way: you ca"
+    },
+    {
+      "id": "aaa4eb95-d28a-4376-9a6f-a2e657460d2a",
+      "label": "Build a habit tracker app with streaks and reminders.",
+      "category": "Projects",
+      "tags": [
+        "habit-tracker",
+        "app-development",
+        "reminders"
+      ],
+      "summary": "Build a habit tracker app with streaks and reminders.",
+      "degree": 4,
+      "group": "Projects",
+      "content_preview": "# Build a habit tracker app with streaks and reminders.\n\nProject idea: build a habit tracker app with streaks and reminders"
+    },
+    {
+      "id": "cc581cce-0cdc-46ed-9e0d-a00ef44b5d96",
+      "label": "Build a personal finance dashboard to track expenses and savings goals",
+      "category": "Projects",
+      "tags": [
+        "personal-finance",
+        "dashboard",
+        "expenses-tracking"
+      ],
+      "summary": "Build a personal finance dashboard to track expenses and savings goals",
+      "degree": 2,
+      "group": "Projects",
+      "content_preview": "# Build a personal finance dashboard to track expenses and savings goals\n\nProject idea: build a personal finance dashboard to track expenses and savings goals"
+    },
+    {
+      "id": "79802738-4816-4b9e-af68-846775a90b69",
+      "label": "Atomic Habits book focusing on habit stacking",
+      "category": "Resources",
+      "tags": [
+        "book-recommendation",
+        "habit-stacking",
+        "self-improvement"
+      ],
+      "summary": "Atomic Habits book focusing on habit stacking",
+      "degree": 3,
+      "group": "Resources",
+      "content_preview": "# Atomic Habits book focusing on habit stacking\n\nBook recommendation: Atomic Habits by James Clear - focus on habit stacking"
+    },
+    {
+      "id": "cce067a0-e231-4020-b724-9a4b522bd8e2",
+      "label": "Wikipedia entry on the enteric nervous system, the gut's 'second brain'.",
+      "category": "Resources",
+      "tags": [
+        "enteric-nervous-system",
+        "wikipedia-article",
+        "neurobiology"
+      ],
+      "summary": "Wikipedia entry on the enteric nervous system, the gut's 'second brain'.",
+      "degree": 0,
+      "group": "Resources",
+      "content_preview": "# Wikipedia entry on the enteric nervous system, the gut's 'second brain'.\n\nEnteric nervous system - Wikipedia\nJump to content\nMain menu\nMain menu\nmove to sidebar\nhide\nNavigation\nMain page\nContents\nCu"
+    },
+    {
+      "id": "035214d4-756f-4ec2-ad7d-3feb6df83690",
+      "label": "Intro guide to Tiago Forte's Building a Second Brain methodology.",
+      "category": "Resources",
+      "tags": [
+        "second-brain",
+        "knowledge-management",
+        "digital-life",
+        "productivity"
+      ],
+      "summary": "Intro guide to Tiago Forte's Building a Second Brain methodology.",
+      "degree": 2,
+      "group": "Resources",
+      "content_preview": "# Intro guide to Tiago Forte's Building a Second Brain methodology.\n\nBuilding a Second Brain: The Definitive Introductory Guide\nSkip to content\nStart Here\nFree Resources\nBlog\nVideos\nPodcast\nCommunity\n"
+    },
+    {
+      "id": "f19022b3-927b-4f44-9fc4-076ec32c471e",
+      "label": "Python 3.11 exception groups via except* for async error handling",
+      "category": "Resources",
+      "tags": [
+        "python-3.11",
+        "exception-groups",
+        "async-error-handling"
+      ],
+      "summary": "Python 3.11 exception groups via except* for async error handling",
+      "degree": 0,
+      "group": "Resources",
+      "content_preview": "# Python 3.11 exception groups via except* for async error handling\n\nTIL: Python 3.11 has exception groups via except* - cleaner error handling for async code"
+    },
+    {
+      "id": "2b62656a-e449-432f-8e61-a1a8181ae23e",
+      "label": "Python 3.15.2 tutorial documentation overview.",
+      "category": "Resources",
+      "tags": [
+        "python",
+        "tutorial",
+        "documentation"
+      ],
+      "summary": "Python 3.15.2 tutorial documentation overview.",
+      "degree": 0,
+      "group": "Resources",
+      "content_preview": "# Python 3.15.2 tutorial documentation overview.\n\nThe Python Tutorial \u2014 Python 3.15.2 documentation\nTheme\nAuto\nLight\nDark\nPrevious topic\nChangelog\nNext topic\n1.\nWhetting Your Appetite\nThis page\nReport"
+    },
+    {
+      "id": "10683569-4d41-47c4-b18a-8482629dd041",
+      "label": "Reading Sapiens chapter on cognitive revolution",
+      "category": "Resources",
+      "tags": [
+        "reading",
+        "sapiens",
+        "cognitive-revolution"
+      ],
+      "summary": "Reading Sapiens chapter on cognitive revolution",
+      "degree": 3,
+      "group": "Resources",
+      "content_preview": "# Reading Sapiens chapter on cognitive revolution\n\nReading: Sapiens by Yuval Noah Harari - chapter on cognitive revolution"
+    },
+    {
+      "id": "620c31ba-9672-4f8b-8ee1-d6fda0b72b67",
+      "label": "CSS container queries let components respond to parent size",
+      "category": "Resources",
+      "tags": [
+        "css",
+        "container-queries",
+        "responsive-design"
+      ],
+      "summary": "CSS container queries let components respond to parent size",
+      "degree": 0,
+      "group": "Resources",
+      "content_preview": "# CSS container queries let components respond to parent size\n\nTIL: CSS container queries let components respond to parent size, not viewport"
+    },
+    {
+      "id": "2f22f6d2-dc88-4a79-a3e7-2d6b53c0bcf3",
+      "label": "React Quick Start guide covering components, JSX, state, and more.",
+      "category": "Resources",
+      "tags": [
+        "react",
+        "documentation",
+        "quick-start"
+      ],
+      "summary": "React Quick Start guide covering components, JSX, state, and more.",
+      "degree": 0,
+      "group": "Resources",
+      "content_preview": "# React Quick Start guide covering components, JSX, state, and more.\n\nQuick Start \u2013 React\nReact\nv\n19.3\nSearch\n\u2318\nCtrl\nK\nLearn\nReference\nCommunity\nBlog\nGET STARTED\nQuick Start\nTutorial: Tic-Tac-Toe\nThin"
+    },
+    {
+      "id": "8d6c3f38-3e40-4592-a94f-ac1d62fe4f67",
+      "label": "Chapter on focus and distraction from Deep Work",
+      "category": "Resources",
+      "tags": [
+        "reading",
+        "deep-work",
+        "cal-newport",
+        "focus-distraction"
+      ],
+      "summary": "Chapter on focus and distraction from Deep Work",
+      "degree": 3,
+      "group": "Resources",
+      "content_preview": "# Chapter on focus and distraction from Deep Work\n\nReading: Deep Work by Cal Newport - chapter on focus and distraction"
+    }
+  ],
+  "edges": [
+    {
+      "from": "87948fb6-9483-4045-b8ea-d2d6be1c75ca",
+      "to": "186f235e-42f3-4db2-bb07-bd2f0b7cfb27",
+      "weight": 0.55,
+      "label": "0.55"
+    },
+    {
+      "from": "ef5a0845-5842-48fe-9433-1c084bb0eb98",
+      "to": "81895030-2d00-44c8-a4db-efd93281427f",
+      "weight": 0.61,
+      "label": "0.61"
+    },
+    {
+      "from": "ef5a0845-5842-48fe-9433-1c084bb0eb98",
+      "to": "aaa4eb95-d28a-4376-9a6f-a2e657460d2a",
+      "weight": 0.37,
+      "label": "0.37"
+    },
+    {
+      "from": "ef5a0845-5842-48fe-9433-1c084bb0eb98",
+      "to": "cc581cce-0cdc-46ed-9e0d-a00ef44b5d96",
+      "weight": 0.35,
+      "label": "0.35"
+    },
+    {
+      "from": "81895030-2d00-44c8-a4db-efd93281427f",
+      "to": "aaa4eb95-d28a-4376-9a6f-a2e657460d2a",
+      "weight": 0.35,
+      "label": "0.35"
+    },
+    {
+      "from": "aaa4eb95-d28a-4376-9a6f-a2e657460d2a",
+      "to": "79802738-4816-4b9e-af68-846775a90b69",
+      "weight": 0.52,
+      "label": "0.52"
+    },
+    {
+      "from": "aaa4eb95-d28a-4376-9a6f-a2e657460d2a",
+      "to": "cc581cce-0cdc-46ed-9e0d-a00ef44b5d96",
+      "weight": 0.38,
+      "label": "0.38"
+    },
+    {
+      "from": "79802738-4816-4b9e-af68-846775a90b69",
+      "to": "8d6c3f38-3e40-4592-a94f-ac1d62fe4f67",
+      "weight": 0.44,
+      "label": "0.44"
+    },
+    {
+      "from": "79802738-4816-4b9e-af68-846775a90b69",
+      "to": "10683569-4d41-47c4-b18a-8482629dd041",
+      "weight": 0.37,
+      "label": "0.37"
+    },
+    {
+      "from": "035214d4-756f-4ec2-ad7d-3feb6df83690",
+      "to": "8d6c3f38-3e40-4592-a94f-ac1d62fe4f67",
+      "weight": 0.4,
+      "label": "0.40"
+    },
+    {
+      "from": "035214d4-756f-4ec2-ad7d-3feb6df83690",
+      "to": "10683569-4d41-47c4-b18a-8482629dd041",
+      "weight": 0.37,
+      "label": "0.37"
+    },
+    {
+      "from": "10683569-4d41-47c4-b18a-8482629dd041",
+      "to": "8d6c3f38-3e40-4592-a94f-ac1d62fe4f67",
+      "weight": 0.44,
+      "label": "0.44"
+    }
+  ],
+  "meta": {
+    "total_nodes": 17,
+    "total_edges": 12,
+    "categories": [
+      "Areas",
+      "Projects",
+      "Resources"
+    ],
+    "generated_at": "2026-11-21T11:05:15.190428+00:00"
+  }
+}
